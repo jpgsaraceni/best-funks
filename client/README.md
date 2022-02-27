@@ -24,3 +24,7 @@ docker-compose exec broker \
 ## 4. Create `utils.go`
 
 This file contains helper functions for client configurations. It is (almost) a copy from the tutorial.
+
+## 5. Create `producer.go`
+
+This creates the Kafka procucer.
