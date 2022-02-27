@@ -131,4 +131,4 @@ rm -rf /tmp/kafka-logs /tmp/zookeeper
 
 ## Kafka Clients
 
-There are a variety of [clients available](https://cwiki.apache.org/confluence/display/KAFKA/Clients) for using Kafka from inside an application. In the [client directory of this repo](https://github.com/jpgsaraceni/best-funks/client) I will build an implementation of [Confluent's Go client](https://docs.confluent.io/clients-confluent-kafka-go/current/overview.html), following their [tutorial](https://developer.confluent.io/get-started/go?_ga=2.27437308.1727033679.1645980141-1350969239.1645980141).
+There are a variety of [clients available](https://cwiki.apache.org/confluence/display/KAFKA/Clients) for using Kafka from inside an application. In the [client directory of this repo](https://github.com/jpgsaraceni/best-funks/tree/main/client) I will build an implementation of [Confluent's Go client](https://docs.confluent.io/clients-confluent-kafka-go/current/overview.html), following their [tutorial](https://developer.confluent.io/get-started/go?_ga=2.27437308.1727033679.1645980141-1350969239.1645980141).
