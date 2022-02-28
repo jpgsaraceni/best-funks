@@ -3,7 +3,6 @@ package main
 import (
 	"log"
 	"math/rand"
-	"os"
 	"time"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
@@ -12,11 +11,7 @@ import (
 )
 
 func main() {
-	if len(os.Args) != 2 {
-		log.Fatalf("missing .properties config file argument. Usage: %s <path to config file>\n", os.Args[0])
-	}
-	configFile := os.Args[1]
-	conf := util.ReadConfig(configFile)
+	conf := util.ReadConfig()
 
 	topic := "purchases"
 	p, err := kafka.NewProducer(&conf)

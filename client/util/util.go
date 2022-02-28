@@ -9,7 +9,14 @@ import (
 	"github.com/confluentinc/confluent-kafka-go/kafka"
 )
 
-func ReadConfig(configFile string) kafka.ConfigMap {
+func ReadConfig() kafka.ConfigMap {
+	// check if config file was passed as argument in command line
+	if len(os.Args) != 2 {
+		log.Fatalf("missing .properties config file argument. Usage: %s <path to config file>\n", os.Args[0])
+	}
+	// get config file name from command line argument
+	configFile := os.Args[1]
+
 	// map that will receive config key-value pairs
 	m := make(map[string]kafka.ConfigValue)
 
