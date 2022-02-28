@@ -1,5 +1,7 @@
 # Step by step
 
+This example application is based on [this tutorial](https://developer.confluent.io/get-started/go/#introduction). If you just clone the repo, run `make producer` in one terminal instance, and `make consumer` in another, you can see it working. It will publish events to a topic then subscribe to it and print them.
+
 ## 1. Run a Kafka Cluster
 
 You can use a Confluent Cloud cluster, or a docker image (like I did). Just copy the `docker-compose.yml` file and run `docker-compose up` in your terminal (you will need [Docker Compose](https://docs.docker.com/compose/install/) installed).
