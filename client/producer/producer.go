@@ -13,7 +13,7 @@ import (
 
 func main() {
 	if len(os.Args) != 2 {
-		log.Fatalf("usage: %s ~/best-funks/client/getting-started.properties\n", os.Args[0])
+		log.Fatalf("missing .properties config file argument. Usage: %s <path to config file>\n", os.Args[0])
 	}
 	configFile := os.Args[1]
 	conf := util.ReadConfig(configFile)
