@@ -1,4 +1,4 @@
-module github.com/jpgsaraceni/best-funks
+module github.com/jpgsaraceni/best-funks/client
 
 go 1.17
 

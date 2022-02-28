@@ -7,6 +7,8 @@ import (
 	"time"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
+
+	"github.com/jpgsaraceni/best-funks/client/util"
 )
 
 func main() {
@@ -14,7 +16,7 @@ func main() {
 		log.Fatalf("usage: %s ~/best-funks/client/getting-started.properties\n", os.Args[0])
 	}
 	configFile := os.Args[1]
-	conf := ReadConfig(configFile)
+	conf := util.ReadConfig(configFile)
 
 	topic := "purchases"
 	p, err := kafka.NewProducer(&conf)
